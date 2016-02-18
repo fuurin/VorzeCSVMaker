@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Vorze CSV Maker</title>
+		<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+		<script src="lib/jquery-1.11.3.min.js"></script>
+		<script src="lib/jquery-ui.min.js"></script>
+		<script src="lib/underscore-min.js"></script>
+    <script src="ts/app.js"></script>
+</head>
+<body>
+		
+    <h1><img id="logo" src="asset/vorze_logo.jpg" /> CSV Maker</h1>
+
+		<div id="message">
+				<p>
+						This is CSV file maker for VORZE products.<br/>
+						If you can not download the CSV file, please click the right button and save with name from the menu.<br/>
+						It is recomended to start the movie first.
+				</p>
+		</div>
+
+		<div id="container">
+				<textarea id="textarea"></textarea>
+				<label class="label" style="top: 15px; left: 40px;">Program</label>
+				<label class="label" style="top: 15px; left: 265px;">Count</label>
+				<label class="label" style="top: 15px; left: 435px;">Power</label>
+				<input id="count" type="text"/>
+				<input id="power" type="text"/>
+				<img id="leftTurn" class="refrect" src="asset/turning.png"/>
+				<img id="rightTurn" src="asset/turning.png"/>
+				<button id="left">Z</button>
+				<button id="right">X</button>
+				<button id="reset">Reset</button>
+				<button id="play">Start</button>
+				<button id="create">Create</button>
+				<div id="powerSlider"></div>
+		</div>
+</body>
+</html>
